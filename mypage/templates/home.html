@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Portfolio</title>
+   
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+  {% include 'nav.html' %}
+
+<br>
+      <div class="container">
+        <div class="row">
+          <div class="col-15">
+            <div class="card text-center">
+                <img src="{% static 'images/Studio_Project.jpeg' %}" class="profile rounded mx-auto d-block"> <br>
+                <div class="card-body">
+                  <h5 class="card-title fs-3">MURALI DHARAN S</h5>
+                  <p class="card-text">Hello there, this is my personal webpage built using Django framework and with bootstrap.</p>
+                  
+                 <a href="{% static 'images/MURALI_DHARAN_S_RESUME.pdf' %}" download><button type="button" class="btn btn-outline-primary">Download Resume</button></a> 
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item "><a href="https://www.linkedin.com/in/murali-dharan-s-808135217/" target="_blank">LinkedIn</a></li>
+                    <li class="list-group-item"><a href="https://github.com/murali2601" target="_blank">Github</a></li>
+                    <li class="list-group-item"><a href="https://muralidharan.netlify.app" target="_blank">Personal Portfolio</a></li>
+                    <li class="list-group-item"><a href="https://wa.me/+917708504082" target="_blank">Whatsapp</a></li>
+                    <li class="list-group-item"><a href="https://www.instagram.com/_murali_2601_/" target="_blank">Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+      
+      </div>
+<br>
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <img src="{% static 'images/skills.png' %}" class="tool rounded mx-auto d-block">
+            <div class="card-body">
+              <h5 class="card-title">Known Skills</h5>
+              <p class="card-text">Html | css | JavaScript | SQL | Java | Python | C | Django | UI/UX | Web-Designing | 
+                Web-Development | UX Development | Android Development | Wireframing</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="{% static 'images/tools.png' %}" class="tools rounded mx-auto d-block">
+            <div class="card-body">
+              <h5 class="card-title">Software Tools</h5>
+              <p class="card-text">Android Studio | Figma | VS code | Netbeans | eclipse | PyCharm | Jupiter Notebook </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <img src="{% static 'images/course.png' %}" class="tool rounded mx-auto d-block">
+            <div class="card-body">
+              <h5 class="card-title">Courses</h5>
+              <p class="card-text"><ol>
+                <li>CS50's Web Development with Python and JavaScript - Harvard University</li>
+                <li>CS50's Artificial Intelligence with Python - Harvard University</li>
+                <li>Google UX Designer - Coursera</li>
+              </ol></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="{% static 'images/strength.png' %}" class="tool rounded mx-auto d-block">
+            <div class="card-body">
+
+              <h5 class="card-title">Strength & Weakness</h5>
+              <p class="card-text"><ul>
+                <li>Strength</li>
+                <p>I can make use of my teammates to sort out the problems in projects</p> <br>
+                <li>Weakness</li>
+                <p>I cannot overcome without completing my pending works.</p>
+              </ul></p>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="card">
+        <div class="card-header">
+         My Another Portfolio Webpage
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Click the below button to open the portfolio webpage</p>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  view website
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Personal Portfolio</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       click <a href="https://muralidharan.netlify.app" target="_blank">Portfolio Website</a> to open
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
+      </div>
+      <br>
+     <center> &copy;copyrighted 2023</center>
+     <br>
+</body>
+</html>

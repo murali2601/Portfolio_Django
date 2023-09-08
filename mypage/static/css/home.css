@@ -1,0 +1,17 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 5% 5%;
+}
+.profile{
+    width: 200px;
+}
+.tools{
+    width: 300px;
+}
+.tool{
+    width: 230px;
+}

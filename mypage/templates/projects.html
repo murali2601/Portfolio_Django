@@ -1,0 +1,179 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="projects-section">
+      <br>
+        <center><h3>Project overview</h3></center>
+        <br>
+        <br>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="{% static 'images/this.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-dark text-white">
+                    <h5>Responsive Portfolio Webpage</h5>
+                    <p>Created on June 2022</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static 'images/weather.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-dark text-white">
+                    <h5>Weather Web Application</h5>
+                    <p>Real-time Weather Report webpage</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static 'images/legend.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-dark text-white">
+                    <h5>Photographt Website</h5>
+                    <p>A web page based on photography</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static 'images/devmd26.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-dark text-white">
+                    <h5>Another Portfolio Webpage</h5>
+                    <p>different NavBar with smooth animations and transitions</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static 'images/md-bg.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-dark text-white">
+                    <h5>Tourist Website Background Autoplay</h5>
+                    <p>Backgroud video Playback attachment</p>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+<br>
+<br>
+<center><h3>Real - time projects</h3></center>
+        <br>
+        <br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'images/this.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio</h5>
+          <p class="card-text">Built by me using HTML,CSS,and JavaScript</p>
+          
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'images/weather.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Weather Web Application</h5>
+          <p class="card-text">Real-time weather application made with API integration</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<br>
+<br>
+<center><h3>UI/UX Projects</h3></center>
+        <br>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/AI Coding.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">AI Web UI</h5>
+                <p class="card-text">AI coding Webpage design made using Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/cyclemart.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cyclemart Web UI</h5>
+                <p class="card-text">Bicycle purchasing Webpage design made using Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/Subscription cards.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Subscription Card UI</h5>
+                <p class="card-text">Cards design made using Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/Graphics Website.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Graphics Card Web UI</h5>
+                <p class="card-text">Graphics card purchasing Webpage design made using Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/Whatsapp home Page.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Whatsapp App UI</h5>
+                <p class="card-text">Whatsapp App UI concept design made using Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">More UI Designs</h5>
+                <p class="card-text">Click the below button to view my Figma Page where you can explore many of my UI/UX designs.</p>
+                <a href="https://figma.com/@_murali_2601_" target="_blank" class="btn btn-primary">Figma Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <center><h3>Youtube Page</h3></center>
+                <br>
+                <br>
+                <div class="card text-center">
+                  <div class="card-header">
+                    Screen recorded
+                  </div>
+                  <div class="card-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2kMySh6k-fQ?si=XYfjU-IzB87hVssj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <a href="https://youtube.com/@muralidharans7743?feature=shared" target="_blank" >View YouTube</a>
+                  </div>
+                </div>
+
+
+</div>
+</body>
+</html>

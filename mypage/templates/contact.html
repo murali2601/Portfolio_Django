@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.contact{
+    margin: 10% 10%;
+}
+.imgs{
+    width: 1000px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="contact">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="{% static 'images/contact.png' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Contact Me</h5>
+                  <p class="card-text">You can contact me via my mail id : muralidharans2601@gmail.com</p>
+                </div>
+              <center>  <form action="" method="get">
+                  {% csrf_token %}
+                  <label>Name</label>
+                  <input type="text" name="Name" placeholder="Enter your full name" required id="names"><br> <br>
+                  <label>E-mail</label>
+                  <input type="email" name="email" placeholder="Enter your e-mail" required> <br><br>
+                  <input type="submit" onclick="myFunction()"> <br>
+                  <br>
+                  
+                </form></center>
+              </div>
+            </div>
+            <div class="col">
+                <h3>Social Links</h3> <br>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://www.linkedin.com/in/murali-dharan-s-808135217/" target="_blank">LinkedIn</a></li>
+                    <li class="list-group-item"><a href="https://github.com/murali2601" target="_blank">Github</a></li>
+                    <li class="list-group-item"><a href="https://muralidharan.netlify.app" target="_blank">Personal Portfolio</a></li>
+                    <li class="list-group-item"><a href="https://wa.me/+917708504082" target="_blank">Whatsapp</a></li>
+                    <li class="list-group-item"><a href="https://www.instagram.com/_murali_2601_/" target="_blank">Instagram</a></li>
+                  </ul>
+            </div>
+            
+          </div>
+    </div>
+
+    <script>
+      let theName = document.getElementById("names").value;
+      function myFunction(){
+        alert(`Your response has been recorded ${theName}`);
+      }
+    </script>
+</body>
+</html>
